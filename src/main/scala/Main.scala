@@ -1,7 +1,7 @@
 import accounts.*
 
 @main def hello(): Unit =
-  val bankAccount = BankAccount(100)
+  val bankAccount = CheckingAccount(100)
   println(s"Balance is ${bankAccount.currentBalance}")
 
   bankAccount.deposit(100)
