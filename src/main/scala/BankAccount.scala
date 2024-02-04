@@ -40,7 +40,7 @@ package accounts:
                 super.withdraw((amount + charge))
         }
 
-        def earnMonthInterest(): Double = {
+        def earnMonthlyInterest(): Double = {
             freeDeposits = 3
             freeWithdrawals = 3
 
