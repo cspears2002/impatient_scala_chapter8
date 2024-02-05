@@ -4,4 +4,7 @@ import accounts.*
   val bankAccount = SavingsAccount(100)
   println(s"Balance is ${bankAccount.currentBalance}")
 
+  bankAccount.earnMonthlyInterest()
+  println(s"Balance is ${bankAccount.currentBalance}")
+ 
 def msg = "I was compiled by Scala 3. :)"

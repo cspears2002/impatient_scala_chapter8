@@ -24,6 +24,9 @@ package accounts:
         private var freeDeposits: Int = 3
         private var freeWithdrawals: Int = 3
 
+        def depositsRemaining = freeDeposits
+        def withdrawalsRemaining = freeWithdrawals
+
         override def deposit(amount: Double): Double = {
             if freeDeposits != 0 then
                 freeDeposits -= 1
@@ -44,6 +47,5 @@ package accounts:
             freeDeposits = 3
             freeWithdrawals = 3
 
-            var balance = super.currentBalance
-            balance + (balance * interest)
+            super.deposit(super.currentBalance * interest)
         }
