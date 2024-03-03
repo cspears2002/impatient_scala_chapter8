@@ -1,6 +1,6 @@
 import scala.collection.mutable.ArrayBuffer
 
-package item:
+package items:
 
     abstract class Item:
         def price: Double
@@ -12,11 +12,11 @@ package item:
 
     class Bundle(bundleDesc: String) extends Item:
         var itemsArrayBuff = ArrayBuffer[Item]()
-        var price: Double =
+        def price: Double =
             var sum = 0.0
             for (item <- itemsArrayBuff) {
                 sum = sum + item.price
             }
-            price
+            sum
 
         def description: String = bundleDesc

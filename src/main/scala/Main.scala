@@ -1,21 +1,14 @@
 import accounts.*
 import cars.*
+import items.*
 
 @main def hello(): Unit =
-  val bankAccount = SavingsAccount(100)
-  println(s"Balance is ${bankAccount.currentBalance}")
-
-  bankAccount.earnMonthlyInterest()
-  println(s"Balance is ${bankAccount.currentBalance}")
-
-  val myCar = Car("Toyota", "Prius", 2016, "MYCAR")
-  println(s"${myCar.description}")
-
-  val myCar1 = Car("Toyota", "Prius")
-  println(s"${myCar1.description}")
-  myCar1.year = 2016
-  myCar1.license = "MYCAR"
-  println(s"${myCar1.description}")
+  val item1 = SimpleItem(0.99, "Item 1")
+  val item2 = SimpleItem(0.99, "Item 2")
+  val item3 = SimpleItem(0.99, "Item 3")
+  val myBundle = Bundle("a bunch of items")
+  myBundle.itemsArrayBuff ++= List(item1, item2, item3)
+  print(s"Bundle price: ${myBundle.price}")
 
 
 def msg = "I was compiled by Scala 3. :)"
