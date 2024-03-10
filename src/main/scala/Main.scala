@@ -22,5 +22,12 @@ import shape.*
   val rectCenter = rectangle.centerPoint(Point(-2, 4), Point(6, 16))
   print(s"Rectangle center: (${rectCenter.x}, ${rectCenter.y})\n")
 
+  val square1 = Square(1, 1, 2)
+  print(s"x: ${square1.x} y: ${square1.y} width: ${square1.width} height: ${square1.height}\n")
+  val square2 = Square(3)
+  print(s"x: ${square2.x} y: ${square2.y} width: ${square2.width} height: ${square2.height}\n")
+  val square3 = Square()
+  print(s"x: ${square3.x} y: ${square3.y} width: ${square3.width} height: ${square3.height}\n")
+
 
 def msg = "I was compiled by Scala 3. :)"

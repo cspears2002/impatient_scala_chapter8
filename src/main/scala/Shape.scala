@@ -23,3 +23,10 @@ package shape:
             val xCenter = (x1 + x2) / 2
             val yCenter = (y1 + y2) / 2
             Point(xCenter, yCenter)
+
+    class Square(x: Int, y: Int, width: Int) extends java.awt.Rectangle(x, y, width: Int, width: Int):
+        def this(width: Int) =
+            this(0, 0, width)
+
+        def this()=
+            this(0, 0, 0)
