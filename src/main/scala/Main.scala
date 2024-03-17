@@ -1,5 +1,6 @@
 import accounts.*
 import cars.*
+import circle.*
 import creature.*
 import items.*
 import points.*
@@ -16,9 +17,12 @@ import shape.*
   val origin = LabeledPoint(0.0, 0.0, "origin")
   print(s"Origin X: ${origin.x} Origin Y: ${origin.y} Label: ${origin.label}\n")
 
-  val circle = Circle()
-  val circleCenter = circle.centerPoint(Point(-2, 4), Point(6, 16))
-  print(s"Circle center: (${circleCenter.x}, ${circleCenter.y})\n")
+  val circle1 = Circle(2.0, 0, 0)
+  print(s"Circle center: ${circle1.centerPoint}\n")
+  print(s"Circle radius is: ${circle1.radius}\n")
+  val circle2 = Circle(2.0, 0, 0)
+  print(s"Is circle1 equal to circle2? ${circle1 == circle2}\n")
+  
   val rectangle = Rectangle()
   val rectCenter = rectangle.centerPoint(Point(-2, 4), Point(6, 16))
   print(s"Rectangle center: (${rectCenter.x}, ${rectCenter.y})\n")
