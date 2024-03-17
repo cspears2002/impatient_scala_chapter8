@@ -1,5 +1,6 @@
 import accounts.*
 import cars.*
+import creature.*
 import items.*
 import points.*
 import shape.*
@@ -29,5 +30,8 @@ import shape.*
   val square3 = Square()
   print(s"x: ${square3.x} y: ${square3.y} width: ${square3.width} height: ${square3.height}\n")
 
+  val ant = Ant()
+  print(s"This is an ant's range: ${ant.range}\n")
+  print(s"Length of env: ${ant.env.length}\n")
 
 def msg = "I was compiled by Scala 3. :)"
