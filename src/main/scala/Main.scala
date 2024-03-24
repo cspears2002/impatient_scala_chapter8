@@ -22,6 +22,10 @@ import shape.*
   print(s"Circle radius is: ${circle1.radius}\n")
   val circle2 = Circle(2.0, 0, 0)
   print(s"Is circle1 equal to circle2? ${circle1 == circle2}\n")
+  val circle3 = Circle(3.0, 0, 0)
+  print(s"Is circle1 equal to circle3? ${circle1 == circle3}\n")
+  val circle4 = Circle(2.0, 1, 1)
+  print(s"Is circle1 equal to circle3? ${circle1 == circle4}\n")
   
   val rectangle = Rectangle()
   val rectCenter = rectangle.centerPoint(Point(-2, 4), Point(6, 16))

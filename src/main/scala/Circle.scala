@@ -5,5 +5,5 @@ package circle:
         def centerPoint = (x, y)
         final override def equals(other: Any) =
             other match
-                case that: Circle => radius == that.radius && centerPoint == that.centerPoint
+                case a: Circle => radius == a.radius && centerPoint == a.centerPoint
             
