@@ -6,4 +6,5 @@ package circle:
         final override def equals(other: Any) =
             other match
                 case a: Circle => radius == a.radius && centerPoint == a.centerPoint
+        override def hashCode(): Int = radius.hashCode() + x.hashCode() + y.hashCode()
             
