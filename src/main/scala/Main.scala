@@ -6,6 +6,7 @@ import items.*
 import points.*
 import shape.*
 
+
 @main def hello(): Unit =
   val item1 = SimpleItem(0.99, "Item 1")
   val item2 = SimpleItem(0.99, "Item 2")
@@ -20,12 +21,14 @@ import shape.*
   val circle1 = Circle(2.0, 0, 0)
   print(s"Circle center: ${circle1.centerPoint}\n")
   print(s"Circle radius is: ${circle1.radius}\n")
+  print(s"circle1 hashCode: ${circle1.hashCode()}\n")
   val circle2 = Circle(2.0, 0, 0)
   print(s"Is circle1 equal to circle2? ${circle1 == circle2}\n")
+  print(s"circle2 hashCode: ${circle2.hashCode()}\n")
   val circle3 = Circle(3.0, 0, 0)
   print(s"Is circle1 equal to circle3? ${circle1 == circle3}\n")
   val circle4 = Circle(2.0, 1, 1)
-  print(s"Is circle1 equal to circle3? ${circle1 == circle4}\n")
+  print(s"Is circle1 equal to circle4? ${circle1 == circle4}\n")
   
   val rectangle = Rectangle()
   val rectCenter = rectangle.centerPoint(Point(-2, 4), Point(6, 16))
@@ -42,4 +45,4 @@ import shape.*
   print(s"This is an ant's range: ${ant.range}\n")
   print(s"Length of env: ${ant.env.length}\n")
 
-def msg = "I was compiled by Scala 3. :)"
+
